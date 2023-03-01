@@ -1,7 +1,7 @@
-package Class6BDD.steps;
+package FinalProject.steps;
 
-import Class6BDD.PO.CartPo;
-import Class6BDD.driver.DriverManager;
+import FinalProject.PO.CartPo;
+import FinalProject.driver.DriverManager;
 import io.cucumber.java.en.Then;
 
 public class CartSteps extends DriverManager {

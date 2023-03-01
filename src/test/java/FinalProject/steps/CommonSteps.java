@@ -1,9 +1,7 @@
-package Class6BDD.steps;
+package FinalProject.steps;
 
-import Class6BDD.driver.DriverManager;
+import FinalProject.driver.DriverManager;
 import io.cucumber.java.en.Then;
-
-import javax.swing.*;
 
 public class CommonSteps extends DriverManager {
     @Then("I go to {string}")

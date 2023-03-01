@@ -1,7 +1,7 @@
-package Class6BDD.steps;
+package FinalProject.steps;
 
-import Class6BDD.PO.LoginPo;
-import Class6BDD.driver.DriverManager;
+import FinalProject.PO.LoginPo;
+import FinalProject.driver.DriverManager;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 

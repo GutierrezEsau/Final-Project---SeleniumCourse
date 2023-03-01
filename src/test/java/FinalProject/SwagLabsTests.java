@@ -1,8 +1,8 @@
-package Class6BDD;
+package FinalProject;
 
-import Class6BDD.PO.LoginPo;
-import Class6BDD.PO.ProductsPo;
-import Class6BDD.driver.DriverManager;
+import FinalProject.PO.LoginPo;
+import FinalProject.PO.ProductsPo;
+import FinalProject.driver.DriverManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

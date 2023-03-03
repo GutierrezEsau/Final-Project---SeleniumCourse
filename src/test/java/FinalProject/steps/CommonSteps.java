@@ -8,7 +8,6 @@ public class CommonSteps extends DriverManager {
     public void fillCrossDockSection(String link) {
         driver.get(link);
     }
-
     @Then("Just wait {int}")
     public void justWait(int time) throws InterruptedException {
         Thread.sleep(time);

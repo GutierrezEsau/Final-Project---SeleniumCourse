@@ -153,7 +153,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Final Project","type":"feature","href":"64be07433a30d897db438fc30d7c934c97063a65abc220b143e76ca4362a7bbe.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-x-circle-fill failure-icon \u0027 title\u003d\u0027FAILURE\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e5 scenarios\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Final Project","type":"feature","href":"64be07433a30d897db438fc30d7c934c97063a65abc220b143e76ca4362a7bbe.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-hourglass-top pending-icon \u0027 title\u003d\u0027PENDING\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e5 scenarios\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -288,21 +288,21 @@
                                                                 <td>
                                                                     <i class="bi bi-flag-fill"></i> Tests Started
                                                                 </td>
-                                                                <td>Mar 02, 2023 12:22:10</td>
+                                                                <td>Mar 02, 2023 12:22:36</td>
                                                             </tr>
                                                             <tr scope="row">
                                                                 <td>
                                                                     <i class="bi bi-stop-circle"></i> Tests
                                                                     Finished
                                                                 </td>
-                                                                <td>Mar 02, 2023 12:23:04</td>
+                                                                <td>Mar 03, 2023 09:05:19</td>
                                                             </tr>
                                                             <tr scope="row">
                                                                 <td>
                                                                     <i class="bi bi-stopwatch"></i> Total
                                                                     Duration
                                                                 </td>
-                                                                <td>54s</td>
+                                                                <td> 20h  42m 42s</td>
                                                             </tr>
                                                             <tr scope="row">
                                                                 <td>
@@ -315,21 +315,21 @@
                                                                     <i class="bi bi-skip-start"></i> Slowest
                                                                     Test
                                                                 </td>
-                                                                <td>26s</td>
+                                                                <td>52s</td>
                                                             </tr>
                                                             <tr scope="row">
                                                                 <td>
                                                                     <i class="bi bi-stopwatch"></i> Average
                                                                     Execution Time
                                                                 </td>
-                                                                <td>10s</td>
+                                                                <td>15s</td>
                                                             </tr>
                                                             <tr scope="row">
                                                                 <td>
                                                                     <i class="bi bi-stopwatch-fill"></i> Total
                                                                     Execution Time
                                                                 </td>
-                                                                <td>53s</td>
+                                                                <td> 1m 19s</td>
                                                             </tr>
                                                             </tbody>
                                                         </table>
@@ -388,20 +388,6 @@
                                                         </tr>
                                                         </thead>
                                                         <tbody>
-                                                                <tr class="scenario-result FAILURE">
-                                                                    <td>
-                                                                            <a href="64be07433a30d897db438fc30d7c934c97063a65abc220b143e76ca4362a7bbe.html">Final Project</a>
-                                                                    </td>
-                                                                    <td>
-                                                                        <a href="ca174155d24d3ce131c1dbf35f86c5e1b773940e32b396a18391a87b671eca3b.html">Buying the cheapest jacket</a>
-                                                                    </td>
-                                                                    <td>12</td>
-                                                                    <td>12:22:10</td>
-                                                                    <td>26s 247ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
-                                                                                style="display:none">FAILURE</span>
-                                                                    </td>
-                                                                </tr>
                                                                 <tr class="scenario-result PENDING">
                                                                     <td>
                                                                             <a href="64be07433a30d897db438fc30d7c934c97063a65abc220b143e76ca4362a7bbe.html">Final Project</a>
@@ -454,6 +440,20 @@
                                                                     <td>12</td>
                                                                     <td>12:22:54</td>
                                                                     <td>10s 277ms</td>
+                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                    <td>
+                                                                            <a href="64be07433a30d897db438fc30d7c934c97063a65abc220b143e76ca4362a7bbe.html">Final Project</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="ca174155d24d3ce131c1dbf35f86c5e1b773940e32b396a18391a87b671eca3b.html">Buying the cheapest jacket</a>
+                                                                    </td>
+                                                                    <td>44</td>
+                                                                    <td>09:04:27</td>
+                                                                    <td>52s 098ms</td>
                                                                     <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                 style="display:none">SUCCESS</span>
                                                                     </td>
@@ -513,7 +513,7 @@
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 3}, {meta: 'Pending tests', value: 1}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 1}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 4}, {meta: 'Pending tests', value: 1}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -564,7 +564,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "60%"
+                        var text = "80%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -608,7 +608,7 @@
             datasets: [{
                 label: 'Feature Coverage',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 3}, {meta: 'Pending tests', value: 1}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 1}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 4}, {meta: 'Pending tests', value: 1}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -659,7 +659,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "60%"
+                        var text = "80%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -704,7 +704,7 @@
             datasets: [
                 {
                     label: 'Automated',
-                    data: [3,1,0,0,0,1,0,0],
+                    data: [4,1,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -787,7 +787,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['1','2','2','0','0','0','0','0'],
+                data: ['1','2','1','1','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

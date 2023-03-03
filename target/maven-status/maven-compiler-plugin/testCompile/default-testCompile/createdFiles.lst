@@ -1,13 +1,6 @@
 FinalProject\driver\DriverManager.class
-FinalProject\PO\ProductsPo.class
 FinalProject\steps\CommonSteps.class
 FinalProject\driver\DriverBase.class
-FinalProject\steps\ProductSteps.class
 FinalProject\steps\ProductsSteps.class
 FinalProject\PO\ProductPO.class
-FinalProject\steps\LoginSteps.class
 FinalProject\Runner.class
-FinalProject\PO\LoginPo.class
-FinalProject\steps\CartSteps.class
-FinalProject\PO\CartPo.class
-FinalProject\SwagLabsTests.class

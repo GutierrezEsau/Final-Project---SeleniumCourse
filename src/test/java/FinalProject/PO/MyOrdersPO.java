@@ -5,6 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class MyOrdersPO {
 
@@ -15,41 +20,24 @@ public class MyOrdersPO {
         PageFactory.initElements(this.driver, this);
     }
 
-    @FindBy(xpath = "//*[@id=\"order-item-row-51893\"]/td[1]/strong")
-    WebElement productNameText;
-    @FindBy(xpath = "//*[@id=\"order-item-row-51893\"]/td[3]/span/span/span")
-    WebElement priceText;
-    @FindBy(xpath = "//*[@id=\"order-item-row-51893\"]/td[4]/ul/li/span[2]")
-    WebElement quantityText;
-    @FindBy(xpath = "//*[@id=\"order-item-row-51893\"]/td[5]/span/span/span")
-    WebElement subtotalText;
-    @FindBy(xpath = "//*[@id=\"order-item-row-51893\"]/td[1]/dl/dd[1]")
-    WebElement sizeText;
-    @FindBy(xpath = "//*[@id=\"order-item-row-51893\"]/td[1]/dl/dd[2]")
-    WebElement colorText;
     @FindBy(xpath = "//*[@id=\"my-orders-table\"]/tfoot/tr[3]/td/strong/span")
     WebElement grandTotalText;
+    @FindBy(xpath = "//*[@id=\"maincontent\"]/div[2]/div[1]/div[1]/div[2]/div/a[2]")
+    WebElement printOrderButton;
 
-    public void iVerifyProductName(String productName){
-        Assert.assertEquals(productName, productNameText.getText());
-    }
-    public void iVerifyFinalPrice(String price){
-        Assert.assertEquals(price, priceText.getText());
-    }
-    public void iVerifyQuantity(String quantity){
-        Assert.assertEquals(quantity, quantityText.getText());
-    }
-    public void iVerifySubtotal(String subtotal){
-        Assert.assertEquals(subtotal, subtotalText.getText());
-    }
-    public void iVerifySize(String size){
-        Assert.assertEquals(size, sizeText.getText());
-    }
-    public void iVerifyColor(String color){
-        Assert.assertEquals(color, colorText.getText());
-    }
     public void iVerifyGrandTotal(String grandTotal){
         Assert.assertEquals(grandTotal, grandTotalText.getText());
+    }
+
+    public void iClickPrintOrderButton(){
+        clickElement(printOrderButton);
+    }
+
+
+    public void clickElement(WebElement element){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        element.click();
     }
 
 }

@@ -41,29 +41,10 @@
       Then I click on Place Order
       Then Just wait 3000
       Then I click on my order number
-      #Then I verify Product "Beaumont Summit Kit"
-      #Then I verify Final Price "$42.00"
-      #Then I verify Quantity "1"
-      #Then I verify subtotal "$42.00"
-      #Then I verify Size "L"
-      #Then I verify Color "Orange"
       Then I verify Grand Total "$47.00"
+      Then I click on Print Order
       Then Just wait 3000
 
-    Scenario: prueba
-      Then I save the Order Number
-      Then I create an account
-      Then I fill the Password
-      Then I fill the Confirm Password
-      Then I click on Create an Account
-      Then I click on View Order
-      Then I verify the Order Number
-      Then I click on Print Order
-      Then I select Save as PDF
-      Then I click on Save
-      Then I click on Save
-      Then I click on open the file
-      Then I verify the Order Number
 
 
 

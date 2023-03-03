@@ -1,6 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Final Project","Buying the cheapest jacket","FAILURE","2023-03-02T12:22:10.234831-08:00[America/Tijuana]","0.0","26.25"
 "Final Project","Prueba","PENDING","2023-03-02T12:22:36.7910643-08:00[America/Tijuana]","0.0","0.1"
 "Final Project","Login with standard_user","SUCCESS","2023-03-02T12:22:36.9110218-08:00[America/Tijuana]","0.0","8.5"
 "Final Project","Login with locked_out_user and verify locked out message","SUCCESS","2023-03-02T12:22:45.5342147-08:00[America/Tijuana]","0.0","8.33"
 "Final Project","Cart Scenario","SUCCESS","2023-03-02T12:22:54.0448965-08:00[America/Tijuana]","0.0","10.28"
+"Final Project","Buying the cheapest jacket","SUCCESS","2023-03-03T09:04:27.3542378-08:00[America/Tijuana]","0.0","52.1"

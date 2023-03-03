@@ -1,6 +1,12 @@
 FinalProject\driver\DriverManager.class
+FinalProject\PO\ShippingPO.class
 FinalProject\steps\CommonSteps.class
 FinalProject\driver\DriverBase.class
+FinalProject\PO\MyOrdersPO.class
+FinalProject\steps\ShippingSteps.class
 FinalProject\steps\ProductsSteps.class
 FinalProject\PO\ProductPO.class
+FinalProject\steps\CheckOutSteps.class
+FinalProject\PO\CheckOutPO.class
 FinalProject\Runner.class
+FinalProject\steps\MyOrdersSteps.class

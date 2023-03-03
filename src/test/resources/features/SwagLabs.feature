@@ -17,7 +17,7 @@
       Then I fill Email address "esaug@advancio.com"
       Then I fill Password "Perroazul12"
       Then I click Login
-      Then Just wait 3000
+      Then Just wait 4000
       Then I click on item in cart
       Then I verify the Product "Beaumont Summit Kit"
       Then I verify the Quantity "1"

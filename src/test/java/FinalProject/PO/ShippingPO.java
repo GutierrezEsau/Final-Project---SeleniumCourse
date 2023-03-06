@@ -41,6 +41,12 @@ public class ShippingPO{
     WebElement colorVerification;
     @FindBy(xpath = "//*[@id=\"shipping-method-buttons-container\"]/div/button")
     WebElement nextButton;
+    @FindBy(xpath = "//*[@id=\"email\"]")
+    WebElement theEmailInput;
+    @FindBy(xpath = "//*[@id=\"pass\"]")
+    WebElement thePasswordInput;
+    @FindBy(xpath = "//*[@id=\"send2\"]")
+    WebElement signInButton;
 
     public void iFillEmailInput(String email){
         fillElement(emailInput, email);
@@ -82,6 +88,18 @@ public class ShippingPO{
 
     public void iClickNextButton(){
         clickElement(nextButton);
+    }
+
+    public void iFillTheEmailInput(String email){
+        fillElement(theEmailInput, email);
+    }
+
+    public void iFIllThePasswordInput(String password){
+        fillElement(thePasswordInput, password);
+    }
+
+    public void iClickSignInButton(){
+        clickElement(signInButton);
     }
 
 

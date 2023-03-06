@@ -53,4 +53,9 @@ public class ProductsSteps extends DriverManager {
     public void iClickOnProceedToCheckout() {
         productPO.clickProceedToCheckout();
     }
+
+    @Then("I add the second option to the wishlist")
+    public void iAddTheSecondOptionToTheWishlist() {
+        productPO.setToWishList();
+    }
 }

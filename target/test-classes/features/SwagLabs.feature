@@ -45,7 +45,20 @@
       Then I click on Print Order
       Then Just wait 3000
 
-
+    Scenario: Adding item to wishlist
+      Given I go to "https://magento.softwaretestingboard.com/"
+      Then I click on Men section
+      Then I click on Jackets
+      Then I sort by Size
+      Then I sort by price
+      Then I add the second option to the wishlist
+      Then I fill the Email address "esaug@advancio.com"
+      Then I fill the Password "Perroazul12"
+      Then I click Sign in
+      Then Just wait 3000
+      Then I verify the Product on wishlist "Proteus Fitness Jackshirt"
+      Then I verify the Price on wishlist "$45.00"
+      Then Just wait 3000
 
 
 

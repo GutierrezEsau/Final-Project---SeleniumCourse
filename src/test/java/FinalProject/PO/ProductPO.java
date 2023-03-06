@@ -46,6 +46,10 @@ public class ProductPO {
     WebElement quantityBox;
     @FindBy(xpath = "//*[@id=\"top-cart-btn-checkout\"]")
     WebElement proceedToCheckout;
+    @FindBy(xpath = "//*[@id=\"maincontent\"]/div[3]/div[1]/div[3]/ol/li[2]")
+    WebElement secondProduct;
+    @FindBy(xpath = "//*[@id=\"maincontent\"]/div[3]/div[1]/div[3]/ol/li[2]/div/div/div[3]/div/div[2]/a[1]")
+    WebElement addToWishList;
 
     public void clickMenSection(){
         clickElement(menSection);
@@ -93,6 +97,11 @@ public class ProductPO {
 
     public void clickProceedToCheckout(){
         clickElement(proceedToCheckout);
+    }
+
+    public void setToWishList(){
+        Actions actions = new Actions(this.driver);
+        actions.moveToElement(secondProduct).moveToElement(addToWishList).click().build().perform();
     }
 
     public void clickElement(WebElement element){

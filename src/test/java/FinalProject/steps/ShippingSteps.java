@@ -62,5 +62,18 @@ public class ShippingSteps extends DriverManager {
         shippingPO.iClickNextButton();
     }
 
+    @Then("I fill the Email address {string}")
+    public void iFillTheEmailAddress(String email) {
+        shippingPO.iFillTheEmailInput(email);
+    }
 
+    @Then("I fill the Password {string}")
+    public void iFillThePassword(String password) {
+        shippingPO.iFIllThePasswordInput(password);
+    }
+
+    @Then("I click Sign in")
+    public void iClickSignIn() {
+        shippingPO.iClickSignInButton();
+    }
 }
